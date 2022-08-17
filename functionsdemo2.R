@@ -2,10 +2,11 @@ outer="India"
 
 fun <- function(){
     print(outer)
-    outer="China"
+    outer<-"China"
     print(outer)
-    outer<-"Russia"
+    outer<<-"Russia"
     print(outer)
+    print("###############")
 }
 
 fun()
