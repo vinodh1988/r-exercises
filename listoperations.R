@@ -29,6 +29,6 @@ cat("\n Indexes \n")
 
  x<-c(1,2,3,4,5)
  y<-c(4,35,345,34,3)
- result<-c(x,y)
+ result<-as.list(c(x,y))
 
  print(result)
