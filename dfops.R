@@ -12,3 +12,7 @@ result = course[1:2,]
 #print(class(result))
 
 print(result)
+
+result = course[1:2,2:3]
+
+print(result)
