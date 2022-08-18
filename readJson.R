@@ -2,6 +2,10 @@ library("rjson")
 
 result <- fromJSON(file="people.json")
 
+print(length(result))
 print(result)
 
-print(result$name)
+
+dframe = as.data.frame(result)
+
+print(dframe)
