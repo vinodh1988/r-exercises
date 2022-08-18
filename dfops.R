@@ -16,3 +16,7 @@ print(result)
 result = course[1:2,2:3]
 
 print(result)
+
+result = course[1:2,c("name","price")]
+
+print(result)
