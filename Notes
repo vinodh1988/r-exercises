@@ -1,0 +1,27 @@
+
+filter, map or reducer
+
+first parameter : function
+second parameter : list
+
+filter: function
+
+          function logic should return boolean[logical]
+		  function should carry one parameter
+		filter output will be size <= input size
+
+map: function
+           function logic should return one value [any type]
+		   function should carry one parameter
+		 map output size = input size
+		 
+reduce: funciton
+		  
+		  function logic should return one valye [any type]
+		  carries two parameters
+		  
+		  first iteration : first two elements would be sent
+		   parameters
+		  subsequent iterations:
+		             current element and previous result
+					 will be sent as parameters
