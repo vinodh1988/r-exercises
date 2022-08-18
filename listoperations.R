@@ -11,9 +11,24 @@ for(x in result)
   cat(x,"->")
  
  indexes=order(result,decreasing=TRUE)
+ 
 cat("\n Indexes \n")
  for(x in indexes){
    temp=result[x]
    cat(temp,"->")
  }
  
+ show=sort.list(result)
+ 
+ cat("\n list function sort \n")
+
+  for(x in show){
+   temp=result[x]
+   cat(temp,"->")
+ }
+
+ x<-c(1,2,3,4,5)
+ y<-c(4,35,345,34,3)
+ result<-c(x,y)
+
+ print(result)
