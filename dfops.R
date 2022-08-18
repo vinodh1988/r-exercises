@@ -20,3 +20,9 @@ print(result)
 result = course[1:2,c("name","price")]
 
 print(result)
+
+cat("'\n####################################\n")
+
+result = subset(course,price>6000)
+
+print(result)
