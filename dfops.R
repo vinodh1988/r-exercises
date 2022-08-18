@@ -26,3 +26,5 @@ cat("'\n####################################\n")
 result = subset(course,price>6000)
 
 print(result)
+
+write.csv(course,"course.csv",row.names=FALSE)
