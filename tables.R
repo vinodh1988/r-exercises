@@ -11,3 +11,4 @@ books <- data.frame(
 
 #dbCreateTable(con,"books",books)
 dbWriteTable(con,"books",books)
+dbDisconnect(con)
