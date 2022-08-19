@@ -1,5 +1,11 @@
 con <- dbConnect(SQLite(),"sample.db")
 
-result <-dbSendQuery(con,"insert into books(sno,name,type) values(7,'CSS','Programming')")
+x<-as.integer(readline(prompt="enter sno ->"))
+y<-readline(prompt="enter name ->")
+z<-readline(prompt="enter city ->")
+
+result <-dbSendQuery(con,"insert into books(sno,name,type) values(?,?,?)")
+dbBind(result,list(x,y,z))
+print(result)
 
 dbClearResult(result)
