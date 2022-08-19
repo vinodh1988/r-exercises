@@ -1,6 +1,16 @@
+con <- dbConnect(SQLite(),"sample.db")
 
-sno<-as.integer(readline(prompt="enter sno ->"))
-name<-readline(prompt="enter name ->")
-type<-readline(prompt="enter city ->")
+x<-as.integer(readline(prompt="enter sno ->"))
+y<-readline(prompt="enter name ->")
+z<-readline(prompt="enter city ->")
 
 cat(sno,name,type)
+
+ appendable=data.frame(
+    sno = c(x),
+    name = c(y),
+    type = c(z)
+) 
+
+
+dbAppendTable(con,"books",appendable)
